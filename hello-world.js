@@ -52,10 +52,15 @@ app.get('/students/:id', (req, res) => {
 
 // create a student
 app.post('/students', async (req, res) => {
+  
+  console.log("creating new student", req.body)
+  
   console.log(req.body);
+  // normally we validate req.body but skipping due to time
 
   const students = await prisma.student.create({ data: req.body });
   res.json(students);
+  
 });
 
 app.listen(port, () => {
