@@ -6,7 +6,7 @@
   "scripts": {
     "dev": "node --watch hello-world.js",
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "pm2 start hello-world.js"
+    "start": "node hello-world.js"
   },
   "author": "Aryan Jabbari",
   "license": "ISC",
